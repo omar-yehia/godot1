@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhayw6qich71d"]
+
+[ext_resource type="PackedScene" uid="uid://bemrakfqw6iro" path="res://Player/player.tscn" id="1_jbsrv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygp7r"]
+size = Vector2(569.5, 130)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w85mn"]
+size = Vector2(145.5, 317)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_jbsrv")]
+position = Vector2(256, 170)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="floor collision" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(306, 297)
+shape = SubResource("RectangleShape2D_ygp7r")
+
+[node name="Panel" type="Panel" parent="StaticBody2D/floor collision"]
+offset_left = -285.0
+offset_top = -65.0
+offset_right = 285.0
+offset_bottom = 46.0
+metadata/_edit_use_anchors_ = true
+
+[node name="left_wall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-43, 202)
+shape = SubResource("RectangleShape2D_w85mn")
+
+[node name="right_wall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(663, 208)
+shape = SubResource("RectangleShape2D_w85mn")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(309.085, 150)
+ignore_rotation = false
+zoom = Vector2(1.25, 1.5)

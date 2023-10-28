@@ -1,0 +1,13 @@
+I want to make an animation tree 
+he created an animation player first 
+and an animation tree
+
+animation player -> animation tab-> click -> new animation (and make idel,jump and death)
+then ??
+	
+
+select the animationsprite2d node
+then from the lower tabs change from SpriteFrames to animation
+on the right menu make key frames for 
+1- the animation (to make it fixed on the idle if idel , on jump on jump and so on :D )
+2- the sprite frame 0,1,2,3,... and so on :D with time spaces 

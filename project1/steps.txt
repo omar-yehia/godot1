@@ -1,0 +1,29 @@
+create new project
+add buttons play and quit 
+add events, on pressed 
+script to change the scene
+
+the world is a scene and the player is another one imported into it
+the player is just a 2d player node?? no its name is 
+	Character Body 2D
+
+it has animation node? yes animation is a node "animated sprite 2D" :)
+
+and the animation has sprite frames=> which are taken from the sprite sheet (the png image with all the frames/images you need to make a sequence that looks like an acceptable animation :) )
+
+and another node for the collision shape, 
+but how do they connect? just by making the collision shape a child node under the character body node? :) I think so, that is the only connection
+the other connection is the position of the collision body with respect to the character body
+the position on the scence they are "definded" in
+
+
+the script (the template one for moving 2d characters) 
+the player script, extend the character body 2d first
+then write the required functions
+it has a main function that is called each moment 
+the physics ? yes __physics_process(delta)
+it is responsible for calculating the movements and stuff
+each delta time :) which is really small
+at the end of it we propably will use 
+the move and slide method :)
+becaused this is the metehod that "draws" the new frame , right?

@@ -1,0 +1,12 @@
+.import/
+.export/
+.imported/
+.mono/
+.import.cfg
+.export.cfg
+*.import
+*.import.res
+*.import.cfg
+*.tscn.export
+*.imported
+*.mono
